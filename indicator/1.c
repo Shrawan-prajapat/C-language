@@ -2,12 +2,13 @@
 
  main(){
 	char str[50];
-	int legnth=0,i,j,n[50] = {0};
+	int legnth, *p;
 	
 	printf("Enter the number: ");
 	scanf("%d",&str);
 	
 	legnth=strlen(str);
+	p= &legnth;
 	
-	printf("%d",legnth);
+	printf("%d\n",*p);
 }
